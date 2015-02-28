@@ -73,8 +73,8 @@
     <script type="text/javascript">
         $( document ).ready(function() {
 
-            // Page refresh every 30s
-            window.setTimeout(function () { location.reload(true) }, 30000);
+            // Page refresh every 3s
+            window.setTimeout(function () { location.reload(true) }, 3000);
 
             // Rotate through all of the logos for host groups
             var showLogo = Math.floor(Math.random() * 100);
@@ -94,7 +94,7 @@
                 $("#resolution").addClass('logo-container');
             }
             else {
-                // Apply random background color class (.pink, .yellow, .lightblue, .darkblue) on load
+                // Apply random background color class (.pink, .yellow, .lightblue, .darkblue, .purple, .blue) on load
                 var colors = ['pink', 'yellow', 'lightblue', 'darkblue'];
                 var color = colors[Math.floor(Math.random() * 4)];
                 $("body").addClass(color);
